@@ -1,3 +1,25 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
-<app-card></app-card>
+<mat-grid-list cols="2" rowHeight="1:1">
+  <mat-grid-tile>
+    <app-card img="assets/img/cupido_collection.jpg" route="https://www.ogsbrand.com/es/collections/the-cupidont-collection/"></app-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-card img="assets/img/cream_collection.jpg" route="https://www.ogsbrand.com/es/collections/cream/"></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="4" rowHeight="1:1.5">
+  <mat-grid-tile class="espaciado">
+    <app-card img="assets/img/cupido_collection.jpg"></app-card>
+  </mat-grid-tile>
+  <mat-grid-tile class="espaciado">
+    <app-card img="assets/img/cream_collection.jpg"></app-card>
+  </mat-grid-tile>
+  <mat-grid-tile class="espaciado">
+    <app-card img="assets/img/cupido_collection.jpg"></app-card>
+  </mat-grid-tile>
+  <mat-grid-tile class="espaciado">
+    <app-card img="assets/img/cream_collection.jpg"></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
