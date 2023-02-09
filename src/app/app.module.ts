@@ -12,14 +12,21 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { RouterModule,Routes } from '@angular/router';
 
+const appRoutes:Routes=[
+  {path:'pene',component:NavbarComponent},
+  {path:'',redirectTo:'/', pathMatch:'full'},
+  {path:'**',component: NavbarComponent}
+ ]
+ 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    RouterModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

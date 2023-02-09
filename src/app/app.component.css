@@ -1,20 +1,18 @@
-
+/*
+css tarjeta index
+*/
 .layout_big {
   padding: 30px;
 }
-
 .grande {
   grid-column: span 2;
 }
-
 .layout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-right: 50px;
   padding-left: 50px;
   list-style: none;
-
-
 }
 .espacios {
   column-gap: 1.5em;
@@ -24,3 +22,7 @@
   justify-content: center;
   align-items: center;
 }
+
+/*
+asdfas
+*/
