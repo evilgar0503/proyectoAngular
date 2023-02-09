@@ -9,13 +9,24 @@ export class CardComponent {
   @Input() img: string="";
   @Input() route: string="";
   @Input() title: string="";
+  @Input() id: number=0;
 
+  public mostrarCuadro(id: number) {
+    const cuadro: any =  document.querySelectorAll('.cuadro');
+    cuadro.forEach(function (e: any) {
+      if(id == e.id) {
+        cuadro[e.id].style.display = "flex";
+      }
+      });
+  }
 
-
-  public mostrarCuadro() {
-    const cuadro: HTMLElement =  document.getElementsByClassName('cuadro');
-    console.log(cuadro)
-    cuadro.style.display = "block";
+  public ocultarCuadro(id: number) {
+    const cuadro: any =  document.querySelectorAll('.cuadro');
+    cuadro.forEach(function (e: any) {
+      if(id == e.id) {
+        cuadro[e.id].style.display = "none";
+      }
+    });
   }
 
 }
