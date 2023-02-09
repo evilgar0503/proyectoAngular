@@ -1,8 +1,19 @@
-mat-card {
-    margin: 0;
+.imagen {
+  position: relative;
 }
-
-mat-card:hover {
+img:hover {
     background-color: grey;
     opacity: 0.7;
+}
+.cuadro {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 20%;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
 }

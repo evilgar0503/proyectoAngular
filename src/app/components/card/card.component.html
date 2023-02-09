@@ -1,5 +1,6 @@
-<a href="{{route}}">
-    <mat-card class="card-small">
-        <img mat-card-image src="{{img}}">
-    </mat-card>
+<a href="{{ route }}" (mouseover)="mostrarCuadro()">
+  <article class="imagen">
+    <img mat-card-image src="{{ img }}" width="100%" />
+    <div class="cuadro" ><div>{{title}}</div></div>
+  </article>
 </a>
