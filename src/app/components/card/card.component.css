@@ -3,15 +3,18 @@
 }
 
 article{
-  background-color: #ffcc03;
+  background-color: #ff0000;
 }
-
+article:hover img{
+  background-color: gray;
+  opacity: 0.8;
+}
 .cuadro {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 50%;
   height: 20%;
   background-color: white;
   display: none;
@@ -25,7 +28,7 @@ a {
 }
 
 .titulo {
-  
+
   margin: auto;
   font-weight: bold;
   font-size: 2em;

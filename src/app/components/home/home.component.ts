@@ -1,5 +1,4 @@
-import { CardComponent } from './../card/card.component';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  title: string="";
+  route: string="";
+  id: number=0;
+  img: string="";
+
 }

@@ -13,13 +13,15 @@ import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { RouterModule,Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 
 const appRoutes:Routes=[
-  {path:'pene',component:NavbarComponent},
-  {path:'',redirectTo:'/', pathMatch:'full'},
-  {path:'**',component: NavbarComponent}
+  {path:'index', component: HomeComponent},
+  {path:'login', component: LoginComponent},
+  {path:'',redirectTo:'index', pathMatch:'full'}
  ]
- 
+
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     FooterComponent,
     CardComponent,
+    HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

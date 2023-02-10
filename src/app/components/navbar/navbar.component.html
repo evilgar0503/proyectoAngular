@@ -5,7 +5,7 @@
   <button mat-icon-button class="example-icon menu">
     <mat-icon class="menu">menu</mat-icon>
   </button>
-    <a href="/index.html"><img class="logo" src="assets/img/logo-black.png" width="63px"></a>
+    <a [routerLink]="['index']"><img class="logo" src="assets/img/logo-black.png" width="63px"></a>
   <span class="spacer"></span>
 
   <div class="navbar_right">
@@ -16,7 +16,7 @@
       <mat-icon>shopping_cart</mat-icon>
       <!-- <span class="navbar_label">Mi carrito</span> -->
     </a>
-    <a href="login.html" mat-mini-fab color="secondary" class="icons">
+    <a [routerLink]="['/login']" mat-mini-fab color="secondary" class="icons">
       <mat-icon>perm_identity</mat-icon>
       <!-- <label class="navbar_label">Cuenta</label> -->
     </a>
