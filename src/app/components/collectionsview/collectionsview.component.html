@@ -1,0 +1,26 @@
+<div class="layout_big">
+    <div class="text-center">
+        <p class="titulo text-5xl p-6 uppercase">{{nombre}}</p>
+    </div>
+    <ul class="layout espacios">
+      <li>
+        <app-product-card
+        img="assets/img/cupido_camiseta_pink_front.jpg"
+        route="/"
+        [id]="0"
+        title = "{{nombre}} - Camiseta"
+        [price]="19.99"
+        ></app-product-card>
+      </li>
+      <li>
+        <app-product-card
+        img="assets/img/cupido_sudadera_marron_front.jpg"
+        route="/"
+        [id]="0"
+        title = "{{nombre}} - Sudadera"
+        [price]="39.99"
+        ></app-product-card>
+      </li>
+    </ul>
+  </div>
+  

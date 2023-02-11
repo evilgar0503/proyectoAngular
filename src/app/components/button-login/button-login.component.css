@@ -1,0 +1,8 @@
+.button {
+    font-weight: 900;
+}
+
+.button:hover {
+    transform: translate(-0.2em, -0.2em);
+    transition: transform .3s ease-out;
+}

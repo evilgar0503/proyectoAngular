@@ -15,12 +15,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { RouterModule,Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { ButtonLoginComponent } from './components/button-login/button-login.component';
+import { CollectionsviewComponent } from './components/collectionsview/collectionsview.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
-const appRoutes:Routes=[
-  {path:'index', component: HomeComponent},
-  {path:'login', component: LoginComponent},
-  {path:'',redirectTo:'index', pathMatch:'full'}
- ]
 
 
 @NgModule({
@@ -31,6 +29,9 @@ const appRoutes:Routes=[
     CardComponent,
     HomeComponent,
     LoginComponent,
+    ButtonLoginComponent,
+    CollectionsviewComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +41,7 @@ const appRoutes:Routes=[
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule,
-    RouterModule,
-    RouterModule.forRoot(appRoutes)
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

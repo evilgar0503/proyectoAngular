@@ -4,6 +4,7 @@
   width: 100%;
   height: 100vh;
   position: absolute;
+  overflow: hidden;
 }
 
 .button {
@@ -11,3 +12,30 @@
 }
 
 
+.divRight::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 67%;
+  height: 230px;
+  background: linear-gradient(to top, #fae849, transparent);
+  z-index: 1000;
+}
+
+
+.divRight::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 67%;
+  height: 230px;
+  background: linear-gradient(to bottom, #fae849, transparent);
+  z-index: 1000;
+}
+
+.divRight {
+  pointer-events: none;
+}
+.button {
+  background-color: #fae849;
+}
