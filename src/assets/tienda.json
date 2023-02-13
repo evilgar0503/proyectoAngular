@@ -1,0 +1,113 @@
+{
+  "collections": [
+    {
+      "id": 0,
+      "title": "The Cupidon't Collection",
+      "portada": "assets/img/cupido_collection.jpg",
+      "abreviatura": "CUPIDON'T",
+      "route": "collections/cupido",
+      "ropa": [
+        {
+          "id": 1,
+          "nombre": "Camiseta",
+          "img1": "assets/img/cupido_camiseta_pink_front.jpg",
+          "img2": "assets/img/cupido_camiseta_pink_back.jpg",
+          "precio": 22.99,
+          "material": "100% Algodón Orgánico",
+          "descripcion": "Camiseta de Cupido? Ponte a trabajar, Cupido que la chupe!"
+        },
+        {
+          "id": 2,
+          "nombre": "Sudadera",
+          "img1": "assets/img/cupido_sudadera_marron_front.jpg",
+          "img2": "assets/img/cupido_sudadera_marron_back.jpg",
+          "precio": 44.99,
+          "material": "280 g/m², 80% algodón, 20% poliéster.",
+          "descripcion": "Sudadera de Cupido? Ponte a trabajar, Cupido que la chupe!"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "C.R.E.A.M.",
+      "portada": "assets/img/cream_collection.jpg",
+      "abreviatura": "C.R.E.A.M.",
+      "route": "collections/C.R.E.A.M",
+      "ropa": [
+        {
+          "id": 1,
+          "nombre": "Sudadera Beige",
+          "img1": "assets/img/cream_sudadera_beige_front.jpg",
+          "img2": "assets/img/cream_sudadera_beige_back.jpg",
+          "precio": 59.99,
+          "material": "65% Algodón / 35% Poliéster",
+          "descripcion": "Un relanzamiento de la prenda estrella del año pasado. Nuevo color, nuevos bordados, misma esencia"
+        },
+        {
+          "id": 2,
+          "nombre": "Sudadera Negra",
+          "img1": "assets/img/cream_sudadera_negra_front.jpg",
+          "img2": "assets/img/cream_sudadera_negra_back.jpg",
+          "precio": 59.99,
+          "material": "65% Algodón / 35% Poliéster",
+          "descripcion": "Un relanzamiento de la prenda estrella del año pasado. Nuevo color, nuevos bordados, misma esencia"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tiger",
+      "portada": "assets/img/gangster_collection.jpg",
+      "abreviatura": "Tiger",
+      "route": "collections/tiger",
+      "ropa": [
+        {
+          "id": 1,
+          "nombre": "Sudadera Beige",
+          "img1": "assets/img/tiger_camiseta_morada_front.jpg",
+          "img2": "assets/img/tiger_camiseta_morada_back.jpg",
+          "precio": 22.99,
+          "material": "100% algodón",
+          "descripcion": "Pa los tigres rectos"
+        },
+        {
+          "id": 2,
+          "nombre": "Sudadera",
+          "img1": "assets/img/tiger_sudadera_blanca_front.jpg",
+          "img2": "assets/img/tiger_sudadera_blanca_back.jpg",
+          "precio": 35.99,
+          "material": "80% algodón ring-spun y peinado, 20% poliéster",
+          "descripcion": "Pa los tigres rectos"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Beer & Churros",
+      "portada": "assets/img/alien_collection.jpg",
+      "abreviatura": "KOREAN BEER",
+      "route": "collections/beer-churros",
+      "ropa": [
+        {
+          "id": 1,
+          "nombre": "Camiseta",
+          "img1": "assets/img/alien_camiseta_verde_front.jpg",
+          "img2": "assets/img/alien_camiseta_verde_back.jpg",
+          "precio": 22.99,
+          "material": "100% Algodón Orgánico",
+          "descripcion": "La camiseta que enamoró a Knekro"
+        },
+        {
+          "id": 2,
+          "nombre": "Sudadera con Capucha",
+          "img1": "assets/img/alien_sudadera_negra_front.jpg",
+          "img2": "assets/img/alien_sudadera_negra_back.jpg",
+          "precio": 45.99,
+          "material": "80% algodón, 20% poliéster.",
+          "descripcion": "La camiseta que enamoró a Knekro"
+        }
+      ]
+    }
+
+  ]
+}

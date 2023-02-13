@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,14 +11,12 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { RouterModule,Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { ButtonLoginComponent } from './components/button-login/button-login.component';
 import { CollectionsviewComponent } from './components/collectionsview/collectionsview.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
-
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,12 +33,12 @@ import { ProductCardComponent } from './components/product-card/product-card.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

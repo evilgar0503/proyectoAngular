@@ -1,51 +1,11 @@
 <div class="layout_big">
-  <ul class="layout espacios">
-    <li class="grande">
+  <ul class="layout espacios" >
+    <li class="grande" *ngFor="let col of collection">
       <app-card
-        img="assets/img/cupido_collection.jpg"
-        route="collections/The Cupidon't Collection"
-        [id]="0"
-        title = "The Cupidon't Collection"
-      ></app-card>
-    </li>
-    <li class="grande">
-      <app-card
-        img="assets/img/cream_collection.jpg"
-        route="collections/C.R.E.A.M"
-        [id]="1"
-        title = "C.R.E.A.M"
-      ></app-card>
-    </li>
-    <li>
-      <app-card
-      img="assets/img/gangster_collection.jpg"
-      route="collections/Tiger"
-      [id]="2"
-      title = "Tiger"
-      ></app-card>
-    </li>
-    <li>
-      <app-card
-      img="assets/img/alien_collection.jpg"
-      route="collections/Beer & Churros"
-      [id]="3"
-      title = "BEER & CHURROS"
-      ></app-card>
-    </li>
-    <li>
-      <app-card
-      img="assets/img/basic_collection.jpg"
-      route="collections/OG's"
-      [id]="4"
-      title="OG's"
-      ></app-card>
-    </li>
-    <li>
-      <app-card
-      img="assets/img/accesories_collection.jpg"
-      route="collections/Accesorios"
-      [id]="5"
-      title="Accesorios"
+        img="{{col.portada}}"
+        route="{{col.route}}"
+        [id]="col.id"
+        title = "{{col.title}}"
       ></app-card>
     </li>
   </ul>
