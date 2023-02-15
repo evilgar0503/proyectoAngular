@@ -1,5 +1,6 @@
-import { Component, OnInit, Input  } from '@angular/core';
+import { Collection } from './../../interfaces/collection';
 import { ListarCollectionsService } from 'src/app/servicios/listar-collections.service';
+import { Component, OnInit, Input  } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,27 +9,22 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./collectionsview.component.css']
 })
 export class CollectionsviewComponent {
-
-  nombre!: string;
+  @Input() idCollection : number;
   id: number;
-  title: string;
-  abreviatura: string;
-  constructor(private listarCollections: ListarCollectionsService, private rutaActiva: ActivatedRoute) { }
+  collection: Collection;
+  constructor(private servicioCollection: ListarCollectionsService, private rutaActiva: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.servicioCollection.disparadorCollection.subscribe(data => {
+      this.id = data;
+      console.log(this.id)
+    });
 
-    this.nombre = this.rutaActiva.snapshot.params['nombre'];
-    if (this.nombre === "cupido") {
-      this.title = "The Cupidon't Collection"
-    }
-    else if(this.nombre === "Tiger") {
-      this.title = "tiger";
-    }
+    console.log("Fuera-"+this.id)
 
-      this.listarCollections.getCollectionById(this.id).subscribe((collection) => {
-        this.title = collection.title;
-        this.abreviatura = collection.abreviatura;
-        console.log(collection);
+    this.servicioCollection.getCollectionById(console.log(this.idCollection)).subscribe((collection) => {
+      this.collection = collection
+      console.log(collection);
     });
   }
 }

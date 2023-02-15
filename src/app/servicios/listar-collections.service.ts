@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Output, EventEmitter } from '@angular/core';
 import { Collection } from '../interfaces/collection';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -11,6 +11,8 @@ const httpOptions={
   providedIn: 'root'
 })
 export class ListarCollectionsService {
+  @Output() disparadorCollection: EventEmitter<any> = new EventEmitter();
+
   private apiUrl="http://localhost:5555/collections";
   // variable http para poder reallizar peticiones asíncronas a la API
   constructor(private http:HttpClient) { }
@@ -18,11 +20,10 @@ export class ListarCollectionsService {
   //Petición de tipo get que devuelve un observable de array de objetos del tipo Modulo de la interface
   listarCollections(): Observable<Collection[]>{
   console.log("entra")
-
     return this.http.get<Collection[]>(this.apiUrl);
   }
 
-  getCollectionById(id: number):Observable<Collection>{
+  getCollectionById(id: any):Observable<Collection>{
     console.log(id);
     return this.http.get<Collection>(this.apiUrl+"/"+id);
   }
