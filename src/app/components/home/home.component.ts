@@ -19,4 +19,5 @@ export class HomeComponent {
       console.log(collection);
     });
   }
+
 }

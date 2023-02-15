@@ -9,7 +9,7 @@ css tarjeta index
 }
 .layout {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 2fr);
   padding-right: 50px;
   padding-left: 50px;
   list-style: none;

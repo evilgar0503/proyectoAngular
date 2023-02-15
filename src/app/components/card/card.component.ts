@@ -6,10 +6,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  @Input() img: string="";
-  @Input() route: string="";
-  @Input() title: string="";
-  @Input() id: number=0;
+  @Input() img: string;
+  @Input() route: string;
+  @Input() title: string;
+  @Input() id: number;
+
 
   public mostrarCuadro(id: number) {
     const cuadro: any =  document.querySelectorAll('.cuadro');

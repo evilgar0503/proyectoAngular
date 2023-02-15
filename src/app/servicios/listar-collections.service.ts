@@ -21,4 +21,9 @@ export class ListarCollectionsService {
 
     return this.http.get<Collection[]>(this.apiUrl);
   }
+
+  getCollectionById(id: number):Observable<Collection>{
+    console.log(id);
+    return this.http.get<Collection>(this.apiUrl+"/"+id);
+  }
 }

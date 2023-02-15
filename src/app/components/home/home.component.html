@@ -1,10 +1,10 @@
 <div class="layout_big">
   <ul class="layout espacios" >
-    <li class="grande" *ngFor="let col of collection">
+    <li class="" *ngFor="let col of collection">
       <app-card
         img="{{col.portada}}"
         route="{{col.route}}"
-        [id]="col.id"
+        [id]=col.id
         title = "{{col.title}}"
       ></app-card>
     </li>
