@@ -6,7 +6,8 @@
     align-content: end;
 }
 .navbartop {
-    background-color: #c73a3a;
+    background-color: #fae849;
+    /* Rojo: #c73a3a */
     padding: 16px 54px;
     height: fit-content;
 }

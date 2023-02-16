@@ -1,24 +1,12 @@
 <div class="layout_big" >
     <div class="text-center">
-        <p class="titulo text-5xl p-6 uppercase"></p>
+        <p class="titulo text-5xl p-6 uppercase">{{collection.title}}</p>
     </div>
     <ul class="layout espacios">
-      <li>
+      <li *ngFor="let rop of collection.ropa">
         <app-product-card
-        img="assets/img/cupido_camiseta_pink_front.jpg"
-        route="/"
-        [id]=0
-        title = " - Camiseta"
-        [price]="19.99"
-        ></app-product-card>
-      </li>
-      <li>
-        <app-product-card
-        img="assets/img/cupido_sudadera_marron_front.jpg"
-        route="/"
-        [id]=2
-        title = " - Sudadera"
-        [price]="39.99"
+        [ropa]=rop
+        abreviatura={{collection.abreviatura}}
         ></app-product-card>
       </li>
     </ul>

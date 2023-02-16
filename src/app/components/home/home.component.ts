@@ -16,7 +16,6 @@ export class HomeComponent {
   ngOnInit(): void {
     this.listarCollections.listarCollections().subscribe((collection) => {
       this.collection = collection;
-      console.log(collection);
     });
   }
 

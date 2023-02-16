@@ -2,9 +2,7 @@
   position: relative;
 }
 
-article{
-  background-color: #ff0000;
-}
+
 article:hover img{
   background-color: gray;
   opacity: 0.8;

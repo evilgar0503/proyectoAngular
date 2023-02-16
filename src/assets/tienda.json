@@ -5,7 +5,7 @@
       "title": "The Cupidon't Collection",
       "portada": "assets/img/cupido_collection.jpg",
       "abreviatura": "CUPIDON'T",
-      "route": "collections/cupido",
+      "route": "collections/cupido/0",
       "ropa": [
         {
           "id": 1,
@@ -32,7 +32,7 @@
       "title": "C.R.E.A.M.",
       "portada": "assets/img/cream_collection.jpg",
       "abreviatura": "C.R.E.A.M.",
-      "route": "collections/C.R.E.A.M",
+      "route": "collections/C.R.E.A.M/1",
       "ropa": [
         {
           "id": 1,
@@ -59,11 +59,11 @@
       "title": "Tiger",
       "portada": "assets/img/gangster_collection.jpg",
       "abreviatura": "Tiger",
-      "route": "collections/tiger",
+      "route": "collections/tiger/2",
       "ropa": [
         {
           "id": 1,
-          "nombre": "Sudadera Beige",
+          "nombre": "Camiseta",
           "img1": "assets/img/tiger_camiseta_morada_front.jpg",
           "img2": "assets/img/tiger_camiseta_morada_back.jpg",
           "precio": 22.99,
@@ -72,7 +72,7 @@
         },
         {
           "id": 2,
-          "nombre": "Sudadera",
+          "nombre": "Sudadera sin capucha",
           "img1": "assets/img/tiger_sudadera_blanca_front.jpg",
           "img2": "assets/img/tiger_sudadera_blanca_back.jpg",
           "precio": 35.99,
@@ -86,7 +86,7 @@
       "title": "Beer & Churros",
       "portada": "assets/img/alien_collection.jpg",
       "abreviatura": "KOREAN BEER",
-      "route": "collections/beer-churros",
+      "route": "collections/beer-churros/3",
       "ropa": [
         {
           "id": 1,

@@ -6,6 +6,5 @@ export interface Collection {
     portada: string;
     abreviatura: string;
     route: string;
-    img: string;
     ropa: Ropa[];
 }

@@ -17,6 +17,8 @@ import { ButtonLoginComponent } from './components/button-login/button-login.com
 import { CollectionsviewComponent } from './components/collectionsview/collectionsview.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import {HttpClientModule} from '@angular/common/http';
+import { CarritoComponent } from './components/carrito/carrito.component';
+import { CardCarritoComponent } from './components/card-carrito/card-carrito.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {HttpClientModule} from '@angular/common/http';
     LoginComponent,
     ButtonLoginComponent,
     CollectionsviewComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    CarritoComponent,
+    CardCarritoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <article class="imagen" (mouseover)="mostrarCuadro(collection.id)" (mouseleave)="ocultarCuadro(collection.id)">
   <a routerLink="{{collection.route}}" (click)="cargarCollection(collection)">
-    <img mat-card-image src="{{collection.img}}" width="100%" />
+    <img mat-card-image src="{{collection.portada}}" width="100%" />
     <div class="cuadro" id={{collection.id}}>
       <h1 class="titulo">{{collection.title}}</h1>
     </div>

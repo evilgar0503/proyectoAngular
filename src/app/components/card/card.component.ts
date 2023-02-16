@@ -28,13 +28,12 @@ export class CardComponent {
       }
     });
   }
-  
+
   cargarCollection(data: Collection) {
     this.servicioCollection.disparadorCollection.emit(data);
   }
 
   ngOnInit(): void {
-    console.log(this.collection)
   }
 
 }

@@ -19,12 +19,11 @@ export class ListarCollectionsService {
 
   //Petición de tipo get que devuelve un observable de array de objetos del tipo Modulo de la interface
   listarCollections(): Observable<Collection[]>{
-  console.log("entra")
     return this.http.get<Collection[]>(this.apiUrl);
   }
 
-  getCollectionById(id: any):Observable<Collection>{
-    console.log(id);
+  getCollectionById(id: number):Observable<Collection>{
     return this.http.get<Collection>(this.apiUrl+"/"+id);
   }
+
 }

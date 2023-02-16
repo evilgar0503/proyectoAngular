@@ -1,12 +1,27 @@
 article:hover {
     transform: scale(1.05);
-    animation-duration: 500ms;
+    transition: 200ms ;
 }
 
 .color {
-    background-color: #c73a3a;
+    background-color: #fae849;
+    color: black;
 }
 
 .color:hover {
-background-color: #8f2424;
+  box-shadow: 1px 2px 7px  black;
 }
+
+.imagenes:hover > .img1 {
+  display: none;
+}
+
+.imagenes:hover > .img2 {
+  display: block;
+}
+
+
+.img2 {
+  display: none;
+}
+
