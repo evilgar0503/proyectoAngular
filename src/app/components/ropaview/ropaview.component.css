@@ -1,0 +1,32 @@
+:root {
+    --items-per-row: 4;
+  }
+  
+  .layout_big {
+    padding: 30px;
+    /* background: linear-gradient(to top, rgba(34,193,195,1) 0%, rgba(250,232,73,1) 100%); */
+  }
+  
+  .layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 50px;
+    padding-left: 50px;
+    list-style: none;
+  }
+  
+  .espacios {
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+  }
+  
+  .layout li {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo {
+    font-weight: 900;
+    letter-spacing: 0.4em;
+  }
+  

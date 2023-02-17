@@ -1,6 +1,11 @@
 .navbar_left {
     float: left;
 }
+
+.navbar_mid {
+    margin-left: 100px;
+}
+
 .navbar_right {
     float: right;
     align-content: end;

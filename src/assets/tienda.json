@@ -105,5 +105,87 @@
       ]
     }
 
+  ],
+  "ropa":[
+    {
+      "id": 0,
+      "nombre": "CUPIDON'T - Camiseta",
+      "img1": "assets/img/cupido_camiseta_pink_front.jpg",
+      "img2": "assets/img/cupido_camiseta_pink_back.jpg",
+      "precio": 22.99,
+      "material": "100% Algodón Orgánico",
+      "descripcion": "Camiseta de Cupido? Ponte a trabajar, Cupido que la chupe!"
+    },
+    {
+      "id": 1,
+      "nombre": "CUPIDON'T - Sudadera",
+      "img1": "assets/img/cupido_sudadera_marron_front.jpg",
+      "img2": "assets/img/cupido_sudadera_marron_back.jpg",
+      "precio": 44.99,
+      "material": "280 g/m², 80% algodón, 20% poliéster.",
+      "descripcion": "Sudadera de Cupido? Ponte a trabajar, Cupido que la chupe!"
+    },
+    {
+      "id": 2,
+      "nombre": "C.R.E.A.M. - Sudadera Beige",
+      "img1": "assets/img/cream_sudadera_beige_front.jpg",
+      "img2": "assets/img/cream_sudadera_beige_back.jpg",
+      "precio": 59.99,
+      "material": "65% Algodón / 35% Poliéster",
+      "descripcion": "Un relanzamiento de la prenda estrella del año pasado. Nuevo color, nuevos bordados, misma esencia"
+    },
+    {
+      "id": 3,
+      "nombre": "C.R.E.A.M. - Sudadera Negra",
+      "img1": "assets/img/cream_sudadera_negra_front.jpg",
+      "img2": "assets/img/cream_sudadera_negra_back.jpg",
+      "precio": 59.99,
+      "material": "65% Algodón / 35% Poliéster",
+      "descripcion": "Un relanzamiento de la prenda estrella del año pasado. Nuevo color, nuevos bordados, misma esencia"
+    },
+    {
+      "id": 4,
+      "nombre": "Tiger - Camiseta",
+      "img1": "assets/img/tiger_camiseta_morada_front.jpg",
+      "img2": "assets/img/tiger_camiseta_morada_back.jpg",
+      "precio": 22.99,
+      "material": "100% algodón",
+      "descripcion": "Pa los tigres rectos"
+    },
+    {
+      "id": 5,
+      "nombre": "Tiger - Sudadera sin capucha",
+      "img1": "assets/img/tiger_sudadera_blanca_front.jpg",
+      "img2": "assets/img/tiger_sudadera_blanca_back.jpg",
+      "precio": 35.99,
+      "material": "80% algodón ring-spun y peinado, 20% poliéster",
+      "descripcion": "Pa los tigres rectos"
+    },
+    {
+      "id": 6,
+      "nombre": "KOREAN BEER - Camiseta",
+      "img1": "assets/img/alien_camiseta_verde_front.jpg",
+      "img2": "assets/img/alien_camiseta_verde_back.jpg",
+      "precio": 22.99,
+      "material": "100% Algodón Orgánico",
+      "descripcion": "La camiseta que enamoró a Knekro"
+    },
+    {
+      "id": 7,
+      "nombre": "KOREAN BEER - Sudadera con Capucha",
+      "img1": "assets/img/alien_sudadera_negra_front.jpg",
+      "img2": "assets/img/alien_sudadera_negra_back.jpg",
+      "precio": 45.99,
+      "material": "80% algodón, 20% poliéster.",
+      "descripcion": "La camiseta que enamoró a Knekro"
+    }
+  ],
+  "users" : [
+    {
+      "id": 0,
+      "nombre": "Eduardo Villar Garcia",
+      "email": "eduardovillar194@gmail.com",
+      "contraseña": "1234"
+    }
   ]
 }

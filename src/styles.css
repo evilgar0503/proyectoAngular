@@ -4,7 +4,8 @@ body {
   height: 100%;
   font-family: var(--font-tile)  !important;
   margin: 0;
-  background-color: rgb(253, 253, 253);
+  background: linear-gradient(to top, rgba(255,250,206,1) 0%, rgba(250,232,73,1) 100%);
+  background-attachment: fixed;
 
 }
 :root {

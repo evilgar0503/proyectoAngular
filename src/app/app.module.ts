@@ -20,6 +20,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { CardCarritoComponent } from './components/card-carrito/card-carrito.component';
 import { RegisterComponent } from './components/register/register.component';
+import { RopaviewComponent } from './components/ropaview/ropaview.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RegisterComponent } from './components/register/register.component';
     ProductCardComponent,
     CarritoComponent,
     CardCarritoComponent,
-    RegisterComponent
+    RegisterComponent,
+    RopaviewComponent
   ],
   imports: [
     BrowserModule,

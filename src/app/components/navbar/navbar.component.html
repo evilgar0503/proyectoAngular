@@ -2,12 +2,15 @@
   <div class="navbar_left">
 
   </div>
-  <button mat-icon-button class="example-icon menu">
-    <mat-icon class="menu">menu</mat-icon>
-  </button>
+  
     <a [routerLink]="['/']"><img class="logo" src="assets/img/logo-black.png" width="63px"></a>
+    
+  <div class="navbar_mid">
+    <a [routerLink]="['/articulos']">
+      Articulos
+    </a>
+  </div>
   <span class="spacer"></span>
-
   <div class="navbar_right">
     <a mat-icon-button class="icons">
       <mat-icon>notifications</mat-icon>
