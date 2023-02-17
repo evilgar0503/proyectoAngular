@@ -1,6 +1,6 @@
+import { ServicioCarritoService } from './../../servicios/servicio-carrito.service';
 import { Component, Input, OnInit } from '@angular/core';
 import { Ropa } from 'src/app/interfaces/ropa';
-import { ListarCollectionsService } from 'src/app/servicios/listar-collections.service';
 
 @Component({
   selector: 'app-carrito',
@@ -9,20 +9,29 @@ import { ListarCollectionsService } from 'src/app/servicios/listar-collections.s
 })
 export class CarritoComponent implements OnInit{
 
-  @Input() ropa: Ropa[] = [];
-  constructor(private servicioCollection: ListarCollectionsService) {
-
-    this.servicioCollection.disparadorCollection.subscribe((data: Ropa) => {
-      console.log("hola");
-
-      this.ropa.push(data);
-      console.log(this.ropa)
-    });
+  public ropas: Ropa[] = [];
+  cart: any[] = []
+  total: number= 0;
+  constructor(private servicioCollection: ServicioCarritoService) {      
   }
 
-  ngOnInit() {
-
-    console.log("recibiendo")
+  ngOnInit(): void {
+    this.cart = JSON.parse(localStorage.getItem('cart')!)
+    this.cart.forEach(element => {
+      const producto: Ropa = {
+        id: element['id'],
+        nombre: element['nombre'],
+        img1: element['img1'],
+        img2: element['img2'],
+        precio: element['precio'],
+        material: element['material'],
+        descripcion: element['descripcion'],
+      }
+      this.total += element['precio'];
+      console.log(this.total)
+      this.ropas.push(producto)
+    });
+    console.log(this.ropas)
   }
 
 }
