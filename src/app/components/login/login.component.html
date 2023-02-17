@@ -29,11 +29,13 @@
               type="" placeholder="Introduce tu contraseña">
           </div>
           <div class="mt-10 button rounded-full">
-            <app-button-login></app-button-login>
+            <app-button-login
+            texto="Iniciar sesion"
+            ></app-button-login>
           </div>
         </form>
         <div class="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
-          ¿ No tienes cuenta ? <a class="cursor-pointer text-indigo-600 hover:text-indigo-800">Registrate</a>
+          ¿ No tienes cuenta ? <a class="cursor-pointer text-indigo-600 hover:text-indigo-800" [routerLink]="['/register']">Registrate</a>
         </div>
       </div>
     </div>

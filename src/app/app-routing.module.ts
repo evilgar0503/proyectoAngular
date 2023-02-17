@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CollectionsviewComponent } from './components/collectionsview/collectionsview.component';
 import { LoginComponent } from './components/login/login.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 const appRoutes:Routes=[
@@ -11,6 +12,7 @@ const appRoutes:Routes=[
   {path:'collections/:nombre/:id', component: CollectionsviewComponent},
   {path:'login', component: LoginComponent},
   {path:'carrito', component: CarritoComponent},
+  {path:'register', component: RegisterComponent},
   {path:'',redirectTo:'', pathMatch:'full'}
  ]
 

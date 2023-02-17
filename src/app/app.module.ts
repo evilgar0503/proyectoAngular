@@ -19,6 +19,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import {HttpClientModule} from '@angular/common/http';
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { CardCarritoComponent } from './components/card-carrito/card-carrito.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CardCarritoComponent } from './components/card-carrito/card-carrito.com
     CollectionsviewComponent,
     ProductCardComponent,
     CarritoComponent,
-    CardCarritoComponent
+    CardCarritoComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

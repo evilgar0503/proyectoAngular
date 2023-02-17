@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button-login',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./button-login.component.css']
 })
 export class ButtonLoginComponent {
+  @Input() texto: string;
 
 }

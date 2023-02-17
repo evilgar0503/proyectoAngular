@@ -25,3 +25,8 @@ article:hover {
   display: none;
 }
 
+
+.success {
+  background-color: #4BB543 !important;
+}
+
