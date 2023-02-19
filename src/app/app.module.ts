@@ -21,6 +21,7 @@ import { CarritoComponent } from './components/carrito/carrito.component';
 import { CardCarritoComponent } from './components/card-carrito/card-carrito.component';
 import { RegisterComponent } from './components/register/register.component';
 import { RopaviewComponent } from './components/ropaview/ropaview.component';
+import { CreateropaComponent } from './components/createropa/createropa.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RopaviewComponent } from './components/ropaview/ropaview.component';
     CarritoComponent,
     CardCarritoComponent,
     RegisterComponent,
-    RopaviewComponent
+    RopaviewComponent,
+    CreateropaComponent
   ],
   imports: [
     BrowserModule,

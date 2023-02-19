@@ -16,4 +16,12 @@ export class ListarArticulosService {
   listarRopa(): Observable<Ropa[]>{
     return this.http.get<Ropa[]>(this.apiUrl);
   }
+
+  getRopaByCollectionId(id: number): Observable<Ropa[]> {
+    return this.http.get<Ropa[]>(this.apiUrl+"?idCollection="+id)
+  }
+
+  anadirArticulo(articulo: Ropa): Observable<Ropa>{
+    return this.http.post<Ropa>(this.apiUrl,articulo);
+    }
 }

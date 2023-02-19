@@ -1,7 +1,9 @@
-import { Collection } from './../../interfaces/collection';
+import { ListarArticulosService } from './../../servicios/listar-articulos.service';
+import { Collection } from 'src/app/interfaces/collection';
 import { ListarCollectionsService } from 'src/app/servicios/listar-collections.service';
 import { Component, OnInit, Input  } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
+import { Ropa } from 'src/app/interfaces/ropa';
 
 @Component({
   selector: 'app-collectionsview',
@@ -9,16 +11,19 @@ import { ActivatedRoute} from '@angular/router';
   styleUrls: ['./collectionsview.component.css']
 })
 export class CollectionsviewComponent implements OnInit{
-
-  @Input() collection : Collection;
-  constructor(private servicioCollection: ListarCollectionsService, private rutaActiva: ActivatedRoute) {
+  collection: Collection;
+  ropa : Ropa[];
+  constructor(private servicioCollection: ListarCollectionsService, private rutaActiva: ActivatedRoute, private servicioArticulos: ListarArticulosService) {
 
   }
 
   ngOnInit() {
-    this.servicioCollection.getCollectionById(this.rutaActiva.snapshot.params['id']).subscribe((data)=> {
-      this.collection = data;
+    this.servicioCollection.getCollectionById(this.rutaActiva.snapshot.params['id']).subscribe((collection)=> {
+      this.collection = collection;
     });
+    this.servicioArticulos.getRopaByCollectionId(this.rutaActiva.snapshot.params['id']).subscribe((ropa) => {
+      this.ropa = ropa;
+    })
   }
 
 }

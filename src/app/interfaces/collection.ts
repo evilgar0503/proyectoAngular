@@ -5,5 +5,4 @@ export interface Collection {
     title: string;
     portada: string;
     route: string;
-    ropa: Ropa[];
 }

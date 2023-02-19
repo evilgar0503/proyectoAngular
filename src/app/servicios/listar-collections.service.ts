@@ -2,6 +2,7 @@ import { Injectable, Output, EventEmitter } from '@angular/core';
 import { Collection } from '../interfaces/collection';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Ropa } from '../interfaces/ropa';
 
 const httpOptions={
   headers:new HttpHeaders({'Content-Type':'application/json',}),

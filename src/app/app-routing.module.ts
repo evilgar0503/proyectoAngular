@@ -1,3 +1,4 @@
+import { CreateropaComponent } from './components/createropa/createropa.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
@@ -15,6 +16,7 @@ const appRoutes:Routes=[
   {path:'carrito', component: CarritoComponent},
   {path:'register', component: RegisterComponent},
   {path:'articulos', component: RopaviewComponent},
+  {path:'create/ropa', component: CreateropaComponent},
   {path:'',redirectTo:'', pathMatch:'full'}
  ]
 
