@@ -14,7 +14,7 @@ const httpOptions={
 export class ListarCollectionsService {
   @Output() disparadorCollection: EventEmitter<any> = new EventEmitter();
 
-  private apiUrl="http://localhost:5555/collections";
+  private apiUrl="http://localhost:8080/collections/obtener";
   // variable http para poder reallizar peticiones asíncronas a la API
   constructor(private http:HttpClient) { }
 
@@ -24,7 +24,7 @@ export class ListarCollectionsService {
   }
 
   getCollectionById(id: number):Observable<Collection>{
-    return this.http.get<Collection>(this.apiUrl+"/"+id);
+    return this.http.get<Collection>(this.apiUrl+"1/"+id);
   }
 
 }

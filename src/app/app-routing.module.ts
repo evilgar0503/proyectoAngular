@@ -7,6 +7,8 @@ import { LoginComponent } from './components/login/login.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { RegisterComponent } from './components/register/register.component';
 import { RopaviewComponent } from './components/ropaview/ropaview.component';
+import { EditeropaComponent } from './components/editeropa/editeropa.component';
+import { RopaDatosComponent } from './components/ropa-datos/ropa-datos.component';
 
 
 const appRoutes:Routes=[
@@ -17,6 +19,8 @@ const appRoutes:Routes=[
   {path:'register', component: RegisterComponent},
   {path:'articulos', component: RopaviewComponent},
   {path:'create/ropa', component: CreateropaComponent},
+  {path:'edit/ropa/:id', component: EditeropaComponent},
+  {path:'vista/ropa/:id', component: RopaDatosComponent},
   {path:'',redirectTo:'', pathMatch:'full'}
  ]
 

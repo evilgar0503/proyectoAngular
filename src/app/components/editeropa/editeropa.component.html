@@ -7,9 +7,8 @@
             class="h-14 w-14 bg-yellow-100 rounded-full flex flex-shrink-0 justify-center items-center text-yellow-500 text-2xl font-mono">
             i</div>
           <div class="block pl-2 font-semibold text-xl self-start text-gray-700">
-            <h2 class="leading-relaxed">Crear un nuevo articulo</h2>
-            <p class="text-sm text-gray-500 font-normal leading-relaxed">Completa este formulario para crear un nuevo
-              articulo</p>
+            <h2 class="leading-relaxed">Editar articulo</h2>
+            <p class="text-sm text-gray-500 font-normal leading-relaxed">Modifica el formulario para editar el articulo</p>
           </div>
         </div>
         <div class="divide-y divide-gray-200">
@@ -18,50 +17,53 @@
               <label class="leading-loose">Collección</label>
               <select id="collection"
                 class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600">
-                <option *ngFor="let collection of collections" [value]=collection.id>
+                <ng-container *ngFor="let collection of collections">
+                  <option [value]=collection.id [selected]="encontrado === collection.id">
                     {{collection.title}}
-                </option>
+                  </option>
+
+                </ng-container>
               </select>
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Nombre</label>
               <input type="text" id="nombre"
                 class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                placeholder="Nombre..." required>
+                placeholder="Nombre..." required value="{{articulo.nombre}}">
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Precio</label>
               <input type="number" id="precio" min="0" step="0.01" value="0.00"
                 class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                placeholder="xxx€" required>
+                placeholder="xxx€" required value="{{articulo.precio}}">
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Material</label>
               <input type="text" id="material"
                 class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                placeholder="Material..." required>
+                placeholder="Material..." required value="{{articulo.material}}">
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Descripción</label>
               <input type="text" id="descripcion"
                 class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                placeholder="Descripción del articulo..." required>
+                placeholder="Descripción del articulo..." required value="{{articulo.descripcion}}">
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Imagen Frontal</label>
               <input type="text" id="img1"
                 class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                placeholder="Url imagen frontal..." required>
+                placeholder="Url imagen frontal..." required value="{{articulo.img1}}">
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Imagen Trasera</label>
               <input type="text" id="img2"
                 class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
-                placeholder="Url imagen trasera..." required>
+                placeholder="Url imagen trasera..." required value="{{articulo.img2}}">
             </div>
           </div>
           <div class="pt-4 flex items-center space-x-4">
-            <a [routerLink]="['/']">
+            <a [routerLink]="['/articulos']">
               <button
                 class="flex justify-center items-center w-full text-gray-900 px-4 py-3 rounded-md focus:outline-none">
                 <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -74,7 +76,7 @@
 
             <button
               class="bg-yellow-200 flex justify-center w-full items-centertext-black px-4 py-3 rounded-md focus:outline-none"
-              (click)="agregarArticulo()">Create</button>
+              (click)="editArticulo()">Editar</button>
 
           </div>
         </div>

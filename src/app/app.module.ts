@@ -22,6 +22,9 @@ import { CardCarritoComponent } from './components/card-carrito/card-carrito.com
 import { RegisterComponent } from './components/register/register.component';
 import { RopaviewComponent } from './components/ropaview/ropaview.component';
 import { CreateropaComponent } from './components/createropa/createropa.component';
+import { EditeropaComponent } from './components/editeropa/editeropa.component';
+import { RopaDatosComponent } from './components/ropa-datos/ropa-datos.component';
+import { MusicaComponent } from './components/musica/musica.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { CreateropaComponent } from './components/createropa/createropa.componen
     CardCarritoComponent,
     RegisterComponent,
     RopaviewComponent,
-    CreateropaComponent
+    CreateropaComponent,
+    EditeropaComponent,
+    RopaDatosComponent,
+    MusicaComponent
   ],
   imports: [
     BrowserModule,

@@ -2,11 +2,14 @@
   <!-- <div>
     <img mat-card-image src="https://i.ytimg.com/vi/lNxGXLPPprI/maxresdefault.jpg" >
   </div> -->
-  <ul class="layout espacios" >
-    <li class="" *ngFor="let col of collection" >
-      <app-card
-        [collection]=col
-      ></app-card>
+  <ul class="layout espacios">
+    <li *ngFor="let col of collection" class="w-full">
+      <app-card [collection]="col"></app-card>
     </li>
   </ul>
+  <div class="flex mt-5 w-full items-center justify-center">
+    <app-musica></app-musica>
+  </div>
 </div>
+<app-footer></app-footer>
+
